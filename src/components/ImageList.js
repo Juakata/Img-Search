@@ -6,7 +6,7 @@ const ImageList = ({ images }) => {
   ));
 
   return (
-    <div>
+    <div className="img-list">
       {renderImages}
     </div>
   );
