@@ -1,8 +1,9 @@
 import React from 'react';
+import ImageCard from './ImageCard';
 
 const ImageList = ({ images }) => {
   const renderImages = images.map(img => (
-    <img src={img.urls.regular} alt={img.description} key={img.id} />
+    <ImageCard key={img.id} img={img} />
   ));
 
   return (
